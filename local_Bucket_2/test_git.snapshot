@@ -1,0 +1,121 @@
+{
+  "header" : {
+    "dataModelVersion" : "2"
+  },
+  "content" : {
+    "comments" : "",
+    "componentType" : "PROCESS_GROUP",
+    "connections" : [ ],
+    "controllerServices" : [ ],
+    "funnels" : [ ],
+    "identifier" : "2af70ca7-a263-302f-ab0d-7998f7fe139c",
+    "inputPorts" : [ ],
+    "labels" : [ ],
+    "name" : "testFlow",
+    "outputPorts" : [ ],
+    "position" : {
+      "x" : 12.078525203289374,
+      "y" : 681.7655576196047
+    },
+    "processGroups" : [ ],
+    "processors" : [ {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-email-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.5.0.3.1.2.0-7"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "2af70ca7-a263-302f-ab0d-7998f7fe139c",
+      "identifier" : "a9f0d533-d67b-381c-bd93-fc65e1fd3890",
+      "name" : "RyanIMAP",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 440.0,
+        "y" : 232.0
+      },
+      "properties" : {
+        "delete.messages" : "false",
+        "folder" : "INBOX",
+        "connection.timeout" : "30 sec",
+        "Mark Messages as Read" : "false",
+        "Use SSL" : "true",
+        "fetch.size" : "10"
+      },
+      "propertyDescriptors" : {
+        "delete.messages" : {
+          "displayName" : "Delete Messages",
+          "identifiesControllerService" : false,
+          "name" : "delete.messages",
+          "sensitive" : false
+        },
+        "password" : {
+          "displayName" : "Password",
+          "identifiesControllerService" : false,
+          "name" : "password",
+          "sensitive" : false
+        },
+        "folder" : {
+          "displayName" : "Folder",
+          "identifiesControllerService" : false,
+          "name" : "folder",
+          "sensitive" : false
+        },
+        "port" : {
+          "displayName" : "Port",
+          "identifiesControllerService" : false,
+          "name" : "port",
+          "sensitive" : false
+        },
+        "connection.timeout" : {
+          "displayName" : "Connection timeout",
+          "identifiesControllerService" : false,
+          "name" : "connection.timeout",
+          "sensitive" : false
+        },
+        "host" : {
+          "displayName" : "Host Name",
+          "identifiesControllerService" : false,
+          "name" : "host",
+          "sensitive" : false
+        },
+        "Mark Messages as Read" : {
+          "displayName" : "Mark Messages as Read",
+          "identifiesControllerService" : false,
+          "name" : "Mark Messages as Read",
+          "sensitive" : false
+        },
+        "user" : {
+          "displayName" : "User Name",
+          "identifiesControllerService" : false,
+          "name" : "user",
+          "sensitive" : false
+        },
+        "Use SSL" : {
+          "displayName" : "Use SSL",
+          "identifiesControllerService" : false,
+          "name" : "Use SSL",
+          "sensitive" : false
+        },
+        "fetch.size" : {
+          "displayName" : "Fetch Size",
+          "identifiesControllerService" : false,
+          "name" : "fetch.size",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.email.ConsumeIMAP",
+      "yieldDuration" : "1 sec"
+    } ],
+    "remoteProcessGroups" : [ ],
+    "variables" : { }
+  }
+}
