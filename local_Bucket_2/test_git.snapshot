@@ -8,17 +8,77 @@
     "connections" : [ ],
     "controllerServices" : [ ],
     "funnels" : [ ],
-    "identifier" : "a8eb00c9-7532-34ec-99ac-87a927d2b9e6",
+    "identifier" : "2af70ca7-a263-302f-ab0d-7998f7fe139c",
     "inputPorts" : [ ],
     "labels" : [ ],
     "name" : "testFlow",
     "outputPorts" : [ ],
     "position" : {
-      "x" : -119.92147479671064,
-      "y" : 613.7655576196047
+      "x" : -107.92147479671063,
+      "y" : 837.7655576196048
     },
     "processGroups" : [ ],
     "processors" : [ {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.5.0.3.1.2.0-7"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "2af70ca7-a263-302f-ab0d-7998f7fe139c",
+      "identifier" : "4349ca86-5017-3e89-b345-c81b5a1496ea",
+      "name" : "Ryans4thProcessor",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 505.90252032300873,
+        "y" : 455.3754799102899
+      },
+      "properties" : {
+        "Compression Format" : "use mime.type attribute",
+        "Mode" : "compress",
+        "Compression Level" : "1",
+        "Update Filename" : "false"
+      },
+      "propertyDescriptors" : {
+        "Compression Format" : {
+          "displayName" : "Compression Format",
+          "identifiesControllerService" : false,
+          "name" : "Compression Format",
+          "sensitive" : false
+        },
+        "Mode" : {
+          "displayName" : "Mode",
+          "identifiesControllerService" : false,
+          "name" : "Mode",
+          "sensitive" : false
+        },
+        "Compression Level" : {
+          "displayName" : "Compression Level",
+          "identifiesControllerService" : false,
+          "name" : "Compression Level",
+          "sensitive" : false
+        },
+        "Update Filename" : {
+          "displayName" : "Update Filename",
+          "identifiesControllerService" : false,
+          "name" : "Update Filename",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : {
+        "background-color" : "#ffffff"
+      },
+      "type" : "org.apache.nifi.processors.standard.CompressContent",
+      "yieldDuration" : "1 sec"
+    }, {
       "autoTerminatedRelationships" : [ ],
       "bulletinLevel" : "WARN",
       "bundle" : {
@@ -30,7 +90,7 @@
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
-      "groupIdentifier" : "a8eb00c9-7532-34ec-99ac-87a927d2b9e6",
+      "groupIdentifier" : "2af70ca7-a263-302f-ab0d-7998f7fe139c",
       "identifier" : "a9f0d533-d67b-381c-bd93-fc65e1fd3890",
       "name" : "Ryan222IMAP",
       "penaltyDuration" : "30 sec",
@@ -126,7 +186,7 @@
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
-      "groupIdentifier" : "a8eb00c9-7532-34ec-99ac-87a927d2b9e6",
+      "groupIdentifier" : "2af70ca7-a263-302f-ab0d-7998f7fe139c",
       "identifier" : "d3fc050b-22bc-30f2-a97e-d3972b23c807",
       "name" : "AttributesToJSON",
       "penaltyDuration" : "30 sec",
@@ -189,7 +249,7 @@
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
-      "groupIdentifier" : "a8eb00c9-7532-34ec-99ac-87a927d2b9e6",
+      "groupIdentifier" : "2af70ca7-a263-302f-ab0d-7998f7fe139c",
       "identifier" : "c1a5a8b8-4742-3af5-bcd1-1015679aea49",
       "name" : "ConsumeEWS",
       "penaltyDuration" : "30 sec",
