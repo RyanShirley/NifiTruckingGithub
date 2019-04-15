@@ -251,7 +251,7 @@
       "executionNode" : "ALL",
       "groupIdentifier" : "2af70ca7-a263-302f-ab0d-7998f7fe139c",
       "identifier" : "c1a5a8b8-4742-3af5-bcd1-1015679aea49",
-      "name" : "ConsumeEWS",
+      "name" : "NewName",
       "penaltyDuration" : "30 sec",
       "position" : {
         "x" : 686.3738311300338,
